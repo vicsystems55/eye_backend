@@ -21,7 +21,7 @@ class PDFController extends Controller
             'name' => 'name',
             'lottery_code' => 'lottery code',
             'logo_url' => config('app.url').'images/reliance_logo.png',
-        ])->setPaper(array(0, 0, 595, 800), 'landscape')->setOptions([
+        ])->setPaper(array(0, 0, 585, 800), 'landscape')->setOptions([
             'defaultFont' => 'sans-serif',
             'isHtml5ParserEnabled' => true,
             'isRemoteEnabled' => true
