@@ -18,6 +18,11 @@ use App\Http\Controllers\QuizzAnswerController;
 
 use App\Http\Controllers\DBController;
 
+use App\Http\Controllers\PDFController;
+
+
+
+
 
 
 /*
@@ -62,6 +67,10 @@ Route::get('/notifications', [NotificationController::class, 'notifications'])->
 Route::post('/submit_answer', [QuizzAnswerController::class, 'submitAnswer']);
 
 Route::get('/switch_db', [DBController::class, 'switch_db']);
+
+
+Route::get('/generate_cert', [PDFController::class, 'generate_cert']);
+
 
 
 
