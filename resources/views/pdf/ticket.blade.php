@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body style="background-image: url(data:image/png;base64,{{ base64_encode(file_get_contents(public_path('cert_background.jpg'))) }})">
+<body style="background-image: url(data:image/png;base64,{{ base64_encode(file_get_contents(public_path('cert_background.jpg'))) }});
+background-size: contain;
+">
     <img src="" alt="">
 </body>
 </html>
