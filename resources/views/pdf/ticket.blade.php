@@ -13,8 +13,8 @@
         @page { margin: 0px; }
         body { margin: 0px; }
 
-        .cali{
-            font-family: 'Kaushan Script', cursive;
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         }
     </style>
 </head>
