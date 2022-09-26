@@ -14,13 +14,13 @@
         body { margin: 0px; }
 
         h1{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            font-family: 'Segoe UI';
         }
     </style>
 </head>
 <body style="background-image: url(data:image/png;base64,{{ base64_encode(file_get_contents(public_path('cert_background2.jpg'))) }});
 background-size: contain;
 ">
-    <h1 style="text-align: center; margin-top: 300px;" >Victor Asuquo</h1>
+    <h1 style="text-align: center; margin-top: 300px;" >Victor Asuquo &</h1>
 </body>
 </html>
