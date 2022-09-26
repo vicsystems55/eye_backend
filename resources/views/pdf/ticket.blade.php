@@ -1,24 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="charset=utf-8" />
-    <style type="text/css">
-        @page {
-            margin: 0;
-        }
-        * { padding: 0; margin: 0; }
-        @font-face {
-            font-family: "source_sans_proregular";           
-            src: local("Source Sans Pro"), url("fonts/sourcesans/sourcesanspro-regular-webfont.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
 
-        }        
-        body{
-            font-family: "source_sans_proregular", Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;            
+    <style>
+        @page { margin: 0px; }
+        body { margin: 0px; }
+
+        .cali{
+            font-family: 'Kaushan Script', cursive;
         }
     </style>
 </head>
-<body>
-Your code here ....
+<body style="background-image: url(data:image/png;base64,{{ base64_encode(file_get_contents(public_path('cert_background2.jpg'))) }});
+background-size: contain;
+">
+    <h1 style="text-align: center; margin-top: 300px;" class="cali">Victor Asuquo</h1>
 </body>
 </html>
