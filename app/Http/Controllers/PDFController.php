@@ -17,12 +17,40 @@ class PDFController extends Controller
     {
         # code...
 
-        $pdf = PDF::loadView('pdf.ticket', [
-            'name' => 'name',
-            'lottery_code' => 'lottery code',
-            'logo_url' => config('app.url').'images/reliance_logo.png',
-        ])->setPaper(array(0, 0, 585, 800), 'landscape')->setOptions([
-            'defaultFont' => 'vic',
+
+        $html = <<<HTML
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet" />
+<style>
+
+.m {
+    font-family: 'Montserrat';
+}
+
+.t {
+    font-family: 'Tangerine';
+}
+
+</style>
+</head>
+<body>
+    <p class="m">
+        Montserrat
+    </p>
+    <p class="t">
+        Tangerine
+    </p>
+</body>
+</html>
+HTML
+;
+
+        $pdf = PDF::loadHtml($html)->setPaper(array(0, 0, 585, 800), 'landscape')->setOptions([
+        
             'isHtml5ParserEnabled' => true,
             'isRemoteEnabled' => true
         
